@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a04a7681ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo"><strong><span>L</span>ENIEL.</strong></h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <!-- <li><a href="#about">About</a></li> -->
+                <li><a href="#portfolio">Gallery</a></li>
+                <li><a href="./pages/local-res-web.html">Local Resort website</a></li>
+                <li><a href="./pages/e-commerce-web.html">E-Commerce website</a></li>
+                <li><a href="./pages/github.html">Github Link</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Student From UM College</p>
+            <h1>Hi, I'm <span>Leniel</span><br>From Philippines</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------------------About Part--------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about2.jpeg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>"Hello, I'm Leniel Chicote "</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                        <li><span>Web Dev</span><br>Creating basic websites</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024 - current</span><br>Created an E-commerce website</li>
+                        <li><span>2023 - 2024</span><br>Created basic websites</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 - 2024</span><br>Currently Enrolled in University of Mindanao with the course Information Technology (IT)</li>
+                        <li><span>2009</span><br>Graduated from Magdum National HighSchool</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------------------Portfolio--------------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/umbrella-beach-solid.svg" alt="">
+                <div class="layer">
+                    <h3>Local Beach Resort website</h3>
+                    <p>A basic designed HTML structured website </p>
+                    <a href="./pages/local-res-web.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/mug-saucer-solid.svg" alt="">
+                <div class="layer">
+                    <h3>E-Commerce website</h3>
+                    <p>A basic designed PHP structured website</p>
+                    <a href="./pages/e-commerce-web.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/github.svg" alt="">
+                <div class="layer">
+                    <h3>GitHub Link</h3>
+                    <p>Click the link to go to directory</p>
+                    <a href="./pages/github.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="./pages/gallery.html" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- -----------------------contact--------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-share-from-square"></i>LenielChicote@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>09976425991</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/leniel.chicote.1/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Leniel. Thank You  <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+</body>
+</html>
+<script src="main.js"></script>
